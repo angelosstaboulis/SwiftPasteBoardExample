@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3yw-JD-GnX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftPasteBoardExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather" translatesAutoresizingMaskIntoConstraints="NO" id="2hu-bS-dv5">
+                                <rect key="frame" x="-34" y="37" width="461" height="234"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-OH-ZBi">
+                                <rect key="frame" x="88" y="306" width="224" height="31"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="bO8-uK-W8w"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                <connections>
+                                    <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CRD-YT-FmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9Y-f0-kua">
+                                <rect key="frame" x="88" y="363" width="224" height="33"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="mNS-xy-s3I"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cut"/>
+                                <connections>
+                                    <action selector="btnCut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhd-Ct-Aop"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLj-E1-9av">
+                                <rect key="frame" x="88" y="425" width="224" height="31"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Yvl-53-jPR"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Copy"/>
+                                <connections>
+                                    <action selector="btnCopy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GL-1Q-pkE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8g-zP-eDk">
+                                <rect key="frame" x="88" y="493" width="224" height="31"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="sjG-Yc-nDb"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Paste"/>
+                                <connections>
+                                    <action selector="btnPaste:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8c-Vt-Cen"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLj-E1-9av" secondAttribute="trailing" constant="63" id="3bo-3p-9bx"/>
+                            <constraint firstItem="2hu-bS-dv5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-7" id="7dh-rb-Btc"/>
+                            <constraint firstItem="RLj-E1-9av" firstAttribute="trailing" secondItem="t8g-zP-eDk" secondAttribute="trailing" id="8fe-pU-gcM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2hu-bS-dv5" secondAttribute="trailing" constant="-68" id="EBx-ft-baf"/>
+                            <constraint firstItem="V9Y-f0-kua" firstAttribute="leading" secondItem="RLj-E1-9av" secondAttribute="leading" id="Klb-8l-pP0"/>
+                            <constraint firstItem="RLj-E1-9av" firstAttribute="leading" secondItem="t8g-zP-eDk" secondAttribute="leading" id="PJK-8D-uyT"/>
+                            <constraint firstItem="t8g-zP-eDk" firstAttribute="top" secondItem="RLj-E1-9av" secondAttribute="bottom" constant="37" id="SEd-Yi-Kbf"/>
+                            <constraint firstItem="bb8-OH-ZBi" firstAttribute="leading" secondItem="V9Y-f0-kua" secondAttribute="leading" id="UJu-cG-2Wi"/>
+                            <constraint firstItem="bb8-OH-ZBi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="bAX-4T-yh4"/>
+                            <constraint firstItem="2hu-bS-dv5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-50" id="cMI-Gk-cvL"/>
+                            <constraint firstItem="V9Y-f0-kua" firstAttribute="top" secondItem="bb8-OH-ZBi" secondAttribute="bottom" constant="26" id="cZR-pL-9OR"/>
+                            <constraint firstItem="bb8-OH-ZBi" firstAttribute="top" secondItem="2hu-bS-dv5" secondAttribute="bottom" constant="35" id="gFP-wZ-HW1"/>
+                            <constraint firstItem="2hu-bS-dv5" firstAttribute="centerX" secondItem="bb8-OH-ZBi" secondAttribute="centerX" constant="-3.5" id="h63-Zt-0qE"/>
+                            <constraint firstItem="bb8-OH-ZBi" firstAttribute="trailing" secondItem="V9Y-f0-kua" secondAttribute="trailing" id="l4P-WN-WUd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t8g-zP-eDk" secondAttribute="bottom" constant="143" id="rvE-gU-NAJ"/>
+                            <constraint firstItem="RLj-E1-9av" firstAttribute="top" secondItem="V9Y-f0-kua" secondAttribute="bottom" constant="29" id="uxP-us-tYO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9uG-qW-4Kt"/>
+                    <connections>
+                        <outlet property="mainImage" destination="2hu-bS-dv5" id="303-1N-s33"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967.20000000000005" y="83.208395802098963"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FfO-MG-aAj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3yw-JD-GnX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nvo-Dm-Imc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="D6F-wB-kZ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agF-CP-NEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="83.208395802098963"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weather" width="2560" height="1706"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
